@@ -1,6 +1,8 @@
 package com.example.primera_evaluacion_ebc.Clases;
 
-public class EmpresasNoTecnologicas extends Empresa{
+import java.io.Serializable;
+
+public class EmpresasNoTecnologicas extends Empresa implements Serializable {
     //los datos de las empresas que tenemos que mostrar son:
     // Logo  (Superclase Empresa)
     // nombre de la Empresa (Superclase Empresa)
@@ -14,5 +16,13 @@ public class EmpresasNoTecnologicas extends Empresa{
         super(logo, nombre);
         this.actividad = actividad;
         this.cnae = cnae;
+    }
+
+    public String getActividad() {
+        return actividad;
+    }
+
+    public String getCnae() {
+        return cnae;
     }
 }

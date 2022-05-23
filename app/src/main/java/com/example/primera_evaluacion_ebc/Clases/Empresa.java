@@ -1,6 +1,8 @@
 package com.example.primera_evaluacion_ebc.Clases;
 
-public class Empresa {
+import java.io.Serializable;
+
+public class Empresa implements Comparable<Empresa>, Serializable {
     // las informacion de la superclase Empresa será
     // Logo
     // nombre de la Empresa
@@ -8,7 +10,8 @@ public class Empresa {
     private  int logo;
     private String nombre;
 
-    public Empresa(int logo, String nombre) {
+    public Empresa(int logo,
+                   String nombre) {
         this.logo = logo;
         this.nombre = nombre;
     }
@@ -27,5 +30,14 @@ public class Empresa {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+
+    @Override
+    public int compareTo(Empresa empresa) {
+
+          return this.logo - empresa.logo;
+
+
     }
 }

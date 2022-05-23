@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Eberrocal/AndroidStudioProjects/primera_evaluacion_ebc/app/src/main/res/layout/activity_empresas_tecnologicas_activiy.xml" value="0.5" />
         <entry key="..\:/Users/Eberrocal/AndroidStudioProjects/primera_evaluacion_ebc/app/src/main/res/layout/activity_main.xml" value="0.36685773840541946" />
+        <entry key="..\:/Users/Eberrocal/AndroidStudioProjects/primera_evaluacion_ebc/app/src/main/res/layout/empresa_no_tecnologica.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Eberrocal/AndroidStudioProjects/primera_evaluacion_ebc/app/src/main/res/layout/empresa_tecnologica.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

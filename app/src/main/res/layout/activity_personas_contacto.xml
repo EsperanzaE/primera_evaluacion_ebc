@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PersonasContactoActivity">
+
+    <Spinner
+        android:id="@+id/spinnerPersonasContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="230dp"
+        android:minHeight="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAnhadirPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minWidth="55dp"
+        android:minHeight="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/spinnerPersonasContacto"
+        app:layout_constraintStart_toEndOf="@id/spinnerPersonasContacto"
+        app:layout_constraintTop_toTopOf="@id/spinnerPersonasContacto"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewTelefonoAPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/telefono"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatos" />
+
+    <TextView
+        android:id="@+id/textViewTelefonoPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/textViewTelefonoAPC"
+        app:layout_constraintStart_toEndOf="@id/textViewTelefonoAPC"
+        app:layout_constraintTop_toTopOf="@id/textViewTelefonoAPC"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="987456123" />
+
+    <TextView
+        android:id="@+id/textViewEmailPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmailAPC"
+        app:layout_constraintStart_toEndOf="@id/textViewEmailAPC"
+        app:layout_constraintTop_toTopOf="@id/textViewEmailAPC"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="personaAnonima@gmail.com" />
+
+    <TextView
+        android:id="@+id/textViewCargoPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCargo"
+        app:layout_constraintStart_toEndOf="@id/textViewCargo"
+        app:layout_constraintTop_toTopOf="@id/textViewCargo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Jefe de proyecto" />
+
+    <TextView
+        android:id="@id/textViewCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/cargo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTelefonoAPC" />
+
+    <TextView
+        android:id="@id/textViewEmailAPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCargo" />
+
+    <TextView
+        android:id="@id/textViewDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/datos"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPersonasContacto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Primera_evaluacion_ebc">
         <activity
+            android:name=".Activities.PersonasContactoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EmpresasTecnologicasActiviy"
+            android:exported="false" />
+        <activity
             android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>

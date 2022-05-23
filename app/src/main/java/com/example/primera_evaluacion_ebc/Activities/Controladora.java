@@ -7,12 +7,14 @@ import com.example.primera_evaluacion_ebc.Clases.Personas;
 import com.example.primera_evaluacion_ebc.R;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Controladora {
+   static ArrayList <Empresa> listaEmpresas=new ArrayList<>();
 
 
     public static ArrayList<Empresa> llenarListaEmpresas() {
-        ArrayList <Empresa> listaEmpresas=new ArrayList<>();
+
 
     //los datos de las empresas que tenemos que mostrar son:
     // Logo y nombre de la Empresa
@@ -40,7 +42,8 @@ public class Controladora {
         listaEmpresas.add(new EmpresasNoTecnologicas(R.drawable.logo_adidas,"Adidas","Ropa","152"));
         listaEmpresas.add(new EmpresasNoTecnologicas(R.drawable.logo_cruzcampo,"Cruzcampo","Alimentacion","829"));
         listaEmpresas.add(new EmpresasNoTecnologicas(R.drawable.logo_apple,"Apple","Dispositivos moviles","478"));
-
+        Collections.sort(listaEmpresas);
     return listaEmpresas;
+
     }
 }
